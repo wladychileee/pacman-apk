@@ -22,7 +22,15 @@
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('service-worker.js')
-            .then(function(reg) { console.log('Service worker registrado:', reg); })
+            .then(function(reg) { 
+              console.log('Service worker registrado:', reg); 
+              // Periodic Sync para actualizar cache cada 24h
+              if ('periodicSync' in reg) {
+                reg.periodicSync.register('actualizar-cache', {
+                  minInterval: 24 * 60 * 60 * 1000
+                }).then(()=>console.log('Periodic Sync registrado')).catch(()=>{});
+              }
+            })
             .catch(function(err) { console.log('Error al registrar service worker:', err); });
         });
       }

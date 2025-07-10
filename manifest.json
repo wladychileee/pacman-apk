@@ -1,11 +1,46 @@
 {
+  "id": "/",
+  "lang": "es",
+  "permissions": ["periodic-background-sync"],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "dir": "ltr",
+  "iarc_rating_id": "",
   "name": "Pacman Josefita",
   "short_name": "Pacman",
   "start_url": "./",
+  "scope": "./",
+  "scope_extensions": [ { "origin": "./" } ],
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "edge_side_panel": {},
+  "file_handlers": [],
+  "handle_links": {},
+  "protocol_handlers": [],
+  "share_target": {},
+  "categories": ["game", "kids", "puzzle", "entertainment"],
+  "widgets": [],
+  "shortcuts": [
+    {
+      "name": "Jugar Pacman",
+      "short_name": "Jugar",
+      "description": "Ir al inicio del juego",
+      "url": "./",
+      "icons": [{ "src": "icon512.png", "sizes": "512x512", "type": "image/png" }]
+    }
+  ],
   "background_color": "#e3f7ff",
   "theme_color": "#e3f7ff",
+  "launch_handler": {},
+  "orientation": "portrait",
   "description": "Juego Pacman de animales y música para Josefita.",
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "600x800",
+      "type": "image/png"
+    }
+  ],
   "icons": [
     {
       "src": "icon512.png",
