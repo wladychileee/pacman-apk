@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego para Niños</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e3f7ff">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dedicatoria">Dedicado con mucho amor a <strong>Josefita Saldias Retamal</strong> 💖</div>
+        <h1>Pacman de Josefita</h1>
+        <div id="pacman-juego"></div>
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <script src="pacman.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function(reg) { console.log('Service worker registrado:', reg); })
+            .catch(function(err) { console.log('Error al registrar service worker:', err); });
+        });
+      }
+      // Iniciar Pacman automáticamente
+      window.addEventListener('DOMContentLoaded', function() {
+        if (typeof iniciarPacman === 'function') {
+          iniciarPacman(1);
+        }
+      });
+    </script>
+</body>
+</html>
