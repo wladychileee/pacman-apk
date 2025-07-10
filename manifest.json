@@ -1,7 +1,7 @@
 {
   "name": "Pacman Josefita",
   "short_name": "Pacman",
-  "start_url": "index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#e3f7ff",
   "theme_color": "#e3f7ff",

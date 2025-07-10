@@ -2,7 +2,7 @@ const CACHE_NAME = 'pacman-josefita-v1';
 const urlsToCache = [
   './',
   './index.html',
-  './app.js',
+
   './pacman.js',
   './style.css',
   './manifest.json',
