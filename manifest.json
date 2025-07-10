@@ -8,6 +8,11 @@
   "description": "Juego Pacman de animales y música para Josefita.",
   "icons": [
     {
+      "src": "icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
       "src": "josefita.jpg",
       "sizes": "192x192",
       "type": "image/jpeg"
